@@ -1,0 +1,64 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+.listnexttocat {
+  font-size: 120%;
+  text-align: left;
+  margin-top: 20px;
+  width: auto;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+/*.cat {
+  display: inline-block;
+  float:left;
+  width: auto;
+  height: auto;
+  margin-right: 150px;
+}*/
+
+.childcatlist {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.parentcatlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parentfourboxes {
+  display: flex;
+  float: left;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.childfourboxes{
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
