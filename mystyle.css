@@ -1,64 +1,98 @@
 body {
   background-color: lightblue;
+  text-align: center;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+.topimg {
+
 }
 
-.listnexttocat {
-  font-size: 120%;
-  text-align: left;
-  margin-top: 20px;
-  width: auto;
-  overflow: hidden;
-  vertical-align: top;
-}
-
-/*.cat {
-  display: inline-block;
-  float:left;
-  width: auto;
-  height: auto;
-  margin-right: 150px;
-}*/
-
-.childcatlist {
-  display: inline-block;
-  vertical-align: top;
-  padding-right: 20px;
-  background-color: white;
-}
-
-.parentcatlist {
+.picturelistparent {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.parentfourboxes {
-  display: flex;
-  float: left;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: grey;
 }
 
-.childfourboxes{
-  display: inline-block;
-  vertical-align: top;
-  padding-right: 20px;
+.picturelistchild{
+  display: flex;
   width: 200px;
   height: 200px;
-  margin: 20px;
-  text-align: center;
+  margin: 10px;
+  text-align: left;
 }
 
-.fixed {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  text-align: center;
+.liststyle {
+  font-size: 2em;
 }
+#containerOne{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.block{
+  height: 50px;
+}
+
+.pictureOne{
+  width: 25%;
+  background-color: red;
+  order: 1;
+}
+
+.textPictureOne{
+  width: 25%;
+  background-color: green;
+  order: 2;
+}
+
+.pictureTwo{
+  width: 25%;
+  background-color: yellow;
+  order: 3;
+}
+
+.textPictureTwo{
+  width: 25%;
+  background-color: blue;
+  order: 4;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:680px) {
+  .topimg{
+    width: 100%;
+    height:auto;
+  }
+  .picturelistparent{
+    display: inline-block;
+  }
+  #containerOne{
+  flex-wrap:wrap;
+  height: 100px;
+  }
+  .pictureOne{
+  width: 100%;
+  }
+  .textPictureOne {
+  width: 100%;
+  order: 2;
+  }
+  .pictureTwo {
+  width: 100%;
+  order: 3;
+  }
+  .textPictureTwo{
+  width:100%;
+  order:4;
+  }
+  }
