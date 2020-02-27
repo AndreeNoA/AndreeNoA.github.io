@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+h2 {
+
+}
+
 .topimg {
 
 }
@@ -16,7 +20,7 @@ body {
 
 .picturelistchild{
   display: flex;
-  width: 200px;
+  width: auto;
   height: 200px;
   margin: 10px;
   text-align: left;
@@ -25,10 +29,11 @@ body {
 .liststyle {
   font-size: 2em;
 }
+
 #containerOne{
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 280px;
   align-items: center;
   text-align: center;
   padding-top: 10px;
@@ -38,34 +43,29 @@ body {
   height: 50px;
 }
 
-.pictureOne{
+.pictureTestimonials{
   width: 25%;
-  background-color: red;
-  order: 1;
+  height: auto;
 }
 
-.textPictureOne{
+.textTestimonials{
   width: 25%;
-  background-color: green;
-  order: 2;
+  height: auto;
+  padding-right: 10px;
 }
 
-.pictureTwo{
-  width: 25%;
-  background-color: yellow;
-  order: 3;
-}
-
-.textPictureTwo{
-  width: 25%;
-  background-color: blue;
-  order: 4;
+.signatur {
+  text-align: right;
 }
 
 
 
-
-
+@media screen and (min-width:680px) {
+  h2{
+    padding-top: 150px;
+    font-size: 200%;
+  }
+  }
 
 
 @media screen and (max-width:680px) {
@@ -77,22 +77,14 @@ body {
     display: inline-block;
   }
   #containerOne{
-  flex-wrap:wrap;
-  height: 100px;
+    flex-wrap:wrap;
+    height: 100px;
   }
-  .pictureOne{
-  width: 100%;
+  .pictureTestimonials{
+    width: 100%;
   }
-  .textPictureOne {
-  width: 100%;
-  order: 2;
-  }
-  .pictureTwo {
-  width: 100%;
-  order: 3;
-  }
-  .textPictureTwo{
-  width:100%;
-  order:4;
+  .textTestimonials {
+    width: 100%;
+    padding-top: 10px;
   }
   }
