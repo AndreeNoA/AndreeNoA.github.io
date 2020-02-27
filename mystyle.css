@@ -3,14 +3,6 @@ body {
   text-align: center;
 }
 
-h2 {
-
-}
-
-.topimg {
-
-}
-
 .picturelistparent {
   display: flex;
   flex-direction: row;
@@ -52,16 +44,26 @@ h2 {
   width: 25%;
   height: auto;
   padding-right: 10px;
+  font-style: italic;
 }
 
 .signatur {
   text-align: right;
+  font-style: normal;
 }
 
-button {
-  flex-wrap: wrap;
-  font-size: 100px;
-  margin-top: 100px;
+a:link, a:visited {
+  background-color: #404040;
+  color: white;
+  padding: 14px 25px;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #b30000;
 }
 
 @media screen and (min-width:680px) {
@@ -82,7 +84,7 @@ button {
   }
   #containerOne{
     flex-wrap:wrap;
-    height: 100px;
+    height: auto;
   }
   .pictureTestimonials{
     width: 100%;
