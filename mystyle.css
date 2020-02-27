@@ -79,19 +79,24 @@ a:hover, a:active {
     width: 100%;
     height:auto;
   }
+
   .picturelistparent{
     display: inline-block;
   }
+
   #containerOne{
     flex-wrap:wrap;
     height: auto;
   }
+
   .pictureTestimonials{
     width: 100%;
     height: auto;
   }
+
   .textTestimonials {
     width: 100%;
     padding-top: 10px;
   }
+  
   }
